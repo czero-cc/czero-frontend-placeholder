@@ -1,14 +1,16 @@
 [build]
-command = "remix vite:build"
-functions = "netlify/functions"
+command = "npm run build"
 publish = "build/client"
 
-[[redirects]]
-from = "/*"
-to = "/.netlify/functions/server"
-status = 200
+[dev]
+command = "npm run dev"
+framework = "vite"
+
+# Set immutable caching for static files, because they have fingerprinted filenames
 
 [[headers]]
 for = "/build/*"
+
 [headers.values]
-"Cache-Control" = "build/client, max-age=31536000, s-maxage=31536000"
+
+"Cache-Control" = "public, max-age=31560000, immutable"
