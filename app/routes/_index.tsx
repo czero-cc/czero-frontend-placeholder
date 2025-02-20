@@ -31,7 +31,7 @@ export default function Index() {
       const dy = e.clientY - centerY;
       const distance = Math.sqrt(dx * dx + dy * dy);
       
-      const maxRadius = 160;
+      const maxRadius = 50;
       if (distance > maxRadius) {
         const angle = Math.atan2(dy, dx);
         const x = Math.cos(angle) * maxRadius;
@@ -60,14 +60,14 @@ export default function Index() {
         <div className="flex flex-col items-center gap-24">
           <header className="relative" ref={setHeaderRef}>
             <div 
-              className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[400px] h-[400px] rounded-full bg-[#c1ff20]"
+              className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[200px] h-[200px] rounded-full bg-[#c1ff20]"
               aria-hidden="true"
               id="bg_green_circle"
             />
             <div 
-              className="absolute w-[1200px] h-[1200px] rounded-full"
+              className="absolute w-[600px] h-[600px] rounded-full"
               style={{
-                transform: `translate(calc(${mousePos.x}px - 600px), calc(${mousePos.y}px - 600px))`,
+                transform: `translate(calc(${mousePos.x}px - 300px), calc(${mousePos.y}px - 300px))`,
                 top: '50%',
                 left: '50%',
                 transition: 'transform 0.1s ease-out'
@@ -86,7 +86,7 @@ export default function Index() {
             <img
               src="/c0_logo_simple.svg"
               alt="Czero Logo"
-              className="block h-[300px] w-auto relative"
+              className="block h-[150px] w-auto relative"
             />
           </header>
           <main className="text-center relative z-10">
