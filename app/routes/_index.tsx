@@ -30,7 +30,7 @@ export default function Index() {
         </main>
         <footer>
           <p className="text-gray-700 text-xl">
-            Contact us: <a href="mailto:contact@example.com" className="hover:underline">info@czero.cc</a>
+            Contact us: <a href="mailto:info@czero.cc" className="hover:underline">info@czero.cc</a>
           </p>
         </footer>
       </div>
