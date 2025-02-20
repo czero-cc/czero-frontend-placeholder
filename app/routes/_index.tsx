@@ -57,7 +57,7 @@ export default function Index() {
           }
         `}
       </style>
-      <div className="bg-white dark:bg-black text-black dark:text-white flex h-screen items-center justify-center font-serif" style={{ fontFamily: 'Baskervville, serif' }}>
+      <div className="bg-white dark:bg-black text-black dark:text-white flex h-screen items-center justify-center font-serif overflow-hidden fixed inset-0" style={{ fontFamily: 'Baskervville, serif' }}>
         <div className="flex flex-col items-center gap-24">
           <header className="relative" ref={setHeaderRef}>
             <div 
