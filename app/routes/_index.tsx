@@ -7,8 +7,7 @@ export const meta: MetaFunction = () => {
     { name: "C0", content: "C0 - AI-driven Software Development" },
     {
       name: "google-font",
-      content:
-        "https://fonts.googleapis.com/css2?family=Baskervville&display=swap",
+      content: "https://fonts.googleapis.com/css2?family=Baskervville&display=swap",
     },
   ];
 };
@@ -57,7 +56,7 @@ export default function Index() {
           }
         `}
       </style>
-      <div className="bg-white dark:bg-black text-black dark:text-white flex h-screen items-center justify-center font-serif overflow-hidden fixed inset-0" style={{ fontFamily: 'Baskervville, serif' }}>
+      <div className="bg-white dark:bg-black text-black dark:text-white flex h-screen items-center justify-center overflow-hidden fixed inset-0 font-medium" style={{ fontFamily: '"Helvetica Neue", Helvetica, Arial, sans-serif' }}>
         <div className="flex flex-col items-center gap-24">
           <header className="relative" ref={setHeaderRef}>
             <div 
@@ -96,7 +95,7 @@ export default function Index() {
             </p>
           </main>
           <footer className="relative z-10">
-            <p className="text-black dark:text-white text-xl">
+            <p className="text-black dark:text-white text-xl font-light">
               Contact us: <a 
                 href="mailto:info@czero.cc" 
                 className="hover:text-[#c1ff20] transition-colors duration-200"
