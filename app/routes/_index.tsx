@@ -15,21 +15,21 @@ export const meta: MetaFunction = () => {
 export default function Index() {
   return (
     <div className="bg-white text-black flex h-screen items-center justify-center font-serif" style={{ fontFamily: 'Baskervville, serif' }}>
-      <div className="flex flex-col items-center gap-12">
+      <div className="flex flex-col items-center gap-24">
         <header>
           <img
             src="/c0-logo.svg"
             alt="Czero Logo"
-            className="block h-80 w-auto"
+            className="block h-[300px] w-auto"
           />
         </header>
         <main className="text-center">
-          <p className="text-xl font-light">
+          <p className="text-2xl font-light">
           Enable your AI-driven Software Development Pipelines
           </p>
         </main>
         <footer>
-          <p className="text-gray-700">
+          <p className="text-gray-700 text-xl">
             Contact us: <a href="mailto:contact@example.com" className="hover:underline">info@czero.cc</a>
           </p>
         </footer>
