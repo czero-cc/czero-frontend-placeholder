@@ -91,7 +91,7 @@ export default function Index() {
           </header>
           <main className="text-center relative z-10">
             <p className="text-2xl font-light">
-              Enable your AI-driven Software Development
+              Rediscover your own knowledge base
             </p>
           </main>
           <footer className="relative z-10">
