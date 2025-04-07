@@ -76,11 +76,14 @@ export default function Index() {
             from { transform: rotate(0deg); }
             to { transform: rotate(360deg); }
           }
+          body {
+            overflow-y: auto;
+          }
         `}
       </style>
-      <div className="bg-white dark:bg-black text-black dark:text-white flex h-screen items-center justify-center overflow-hidden fixed inset-0 font-medium" style={{ fontFamily: '"Helvetica Neue", Helvetica, Arial, sans-serif' }}>
-        <div className="flex flex-col items-center gap-24">
-          <header className="relative" ref={setHeaderRef}>
+      <div className="bg-white dark:bg-black text-black dark:text-white min-h-screen flex flex-col items-center justify-center overflow-y-auto py-20" style={{ fontFamily: '"Helvetica Neue", Helvetica, Arial, sans-serif' }}>
+        <div className="flex flex-col items-center pt-24 w-full max-w-6xl mx-auto px-4">
+          <header className="relative mb-44" ref={setHeaderRef}>
             <div 
               className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[200px] h-[200px] rounded-full bg-[#c1ff20]"
               aria-hidden="true"
@@ -112,7 +115,7 @@ export default function Index() {
             />
           </header>
           <main className="text-center relative z-10">
-            <p className="text-2xl font-light mb-4">
+            <p className="text-3xl font-light mb-4">
               private by design, personally adaptive, and consistent
             </p>
             
@@ -122,46 +125,35 @@ export default function Index() {
             </p>
             
             <div className="flex flex-col gap-6 mb-12">
-              <p className="text-lg font-medium">Try our solutions:</p>
+              <p className="text-lg font-medium">Try it yourself:</p>
               
               <div className="flex flex-col sm:flex-row justify-center gap-4">
-                <a 
-                  href="https://demo.czero.cc" 
-                  target="_blank" 
-                  rel="noopener noreferrer"
-                  className="px-6 py-3 bg-[#c1ff20] text-black font-medium rounded-md hover:bg-opacity-90 transition-colors duration-200"
-                >
-                  Proof-of-Concept Demo
-                </a>
-                
-                <a 
-                  href="https://discord.gg/yjEUkUTEak" 
-                  target="_blank" 
-                  rel="noopener noreferrer"
-                  className="px-6 py-3 border border-[#c1ff20] text-black dark:text-white font-medium rounded-md hover:bg-[#c1ff20] hover:bg-opacity-10 transition-colors duration-200"
-                >
-                  Join our Discord
-                </a>
+                <div className="flex flex-col items-center">
+                  <a 
+                    href="https://demo.czero.cc" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="px-6 py-3 bg-[#c1ff20] text-black font-medium rounded-md hover:bg-opacity-90 transition-colors duration-200"
+                  >
+                    Proof-of-Concept Demo
+                  </a>
+                  <p className="text-xs text-gray-500 dark:text-gray-400 mt-2">
+                    *For demonstration purposes only,<br />the demo makes calls to external LLM provider at the end (for the chat experience)
+                    <br /> Please be aware of what you process with CZero engine
+                  </p>
+                </div>
               </div>
             </div>
           </main>
-          <footer className="relative z-10 text-center">
-            <p className="text-black dark:text-white text-xl font-light mb-8">
-              Contact us: <a 
-                href="mailto:info@czero.cc" 
-                className="hover:text-[#c1ff20] transition-colors duration-200"
-              >
-                info@czero.cc
-              </a>
-            </p>
+          <footer className="relative z-10 text-center mt-12">
             
-            <div className="mt-8">
+            <div className="mb-4 flex flex-col items-center">
               <p className="text-sm text-gray-600 dark:text-gray-400 mb-3">
                 Join our newsletter to stay updated
               </p>
               <form 
                 onSubmit={handleSubscribe}
-                className="flex flex-col sm:flex-row gap-3 max-w-md mx-auto"
+                className="flex flex-col sm:flex-row gap-3 justify-center w-full max-w-md mx-auto"
               >
                 <input 
                   name="Email" 
@@ -190,6 +182,33 @@ export default function Index() {
                 </p>
               )}
             </div>
+            
+            <div className="mt-16 mb-12">
+              <p className="text-xl font-light mb-4">
+                Interested in implementing CZero&apos;s technology?
+              </p>
+              <p className="text-base text-gray-700 dark:text-gray-300 max-w-2xl mx-auto mb-6">
+                We&apos;d love to hear about your use case and specific requirements. 
+                Please reach out to discuss how we can help with your privacy-first AI implementation.
+              </p>
+            </div>
+            
+            <p className="text-black dark:text-white text-xl font-light mb-4">
+              Contact us: <a 
+                href="mailto:info@czero.cc" 
+                className="hover:text-[#c1ff20] transition-colors duration-200"
+              >
+                info@czero.cc
+              </a>
+            </p>
+            <a 
+                  href="https://discord.gg/yjEUkUTEak" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="px-6 py-3 border border-[#c1ff20] text-black dark:text-white font-medium rounded-md hover:bg-[#c1ff20] hover:bg-opacity-10 transition-colors duration-200"
+                >
+                  Join our Discord
+            </a>
           </footer>
         </div>
       </div>
