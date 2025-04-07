@@ -147,6 +147,15 @@ export default function Index() {
           </main>
           <footer className="relative z-10 text-center mt-12">
             
+            <div className="mt-16 mb-12">
+              <p className="text-xl font-light mb-4">
+                Interested in implementing CZero&apos;s technology?
+              </p>
+              <p className="text-base text-gray-700 dark:text-gray-300 max-w-2xl mx-auto mb-6">
+                We&apos;d love to hear about your use case and specific requirements. 
+                Please reach out to discuss how we can help with your privacy-first AI implementation.
+              </p>
+            </div>
             <div className="mb-4 flex flex-col items-center">
               <p className="text-sm text-gray-600 dark:text-gray-400 mb-3">
                 Join our newsletter to stay updated
@@ -181,16 +190,6 @@ export default function Index() {
                   Something went wrong. Please try again.
                 </p>
               )}
-            </div>
-            
-            <div className="mt-16 mb-12">
-              <p className="text-xl font-light mb-4">
-                Interested in implementing CZero&apos;s technology?
-              </p>
-              <p className="text-base text-gray-700 dark:text-gray-300 max-w-2xl mx-auto mb-6">
-                We&apos;d love to hear about your use case and specific requirements. 
-                Please reach out to discuss how we can help with your privacy-first AI implementation.
-              </p>
             </div>
             
             <p className="text-black dark:text-white text-xl font-light mb-4">
