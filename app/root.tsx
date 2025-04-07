@@ -28,7 +28,8 @@ export function Layout({ children }: { children: React.ReactNode }) {
       <head>
         <meta charSet="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <script defer data-domain="czero.cc" src="https://plausible.io/js/script.js"></script>
+        {/* <script defer data-domain="czero.cc" src="https://plausible.io/js/script.js"></script> */}
+        <script defer data-domain="czero.cc" src="/js/script.js"></script>
         <Meta />
         <Links />
       </head>
