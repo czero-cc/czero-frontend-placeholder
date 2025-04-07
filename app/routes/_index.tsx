@@ -3,8 +3,8 @@ import { useState, useEffect } from "react";
 
 export const meta: MetaFunction = () => {
   return [
-    { title: "C0 - AI-driven Software Development" },
-    { name: "C0", content: "C0 - AI-driven Software Development" },
+    { title: "C0 - Private AI" },
+    { name: "C0", content: "C0 - Private AI" },
     {
       name: "google-font",
       content: "https://fonts.googleapis.com/css2?family=Baskervville&display=swap",
