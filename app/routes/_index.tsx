@@ -15,7 +15,7 @@ export const meta: MetaFunction = () => {
 export default function Index() {
   const [mousePos, setMousePos] = useState({ x: 0, y: 0 });
   const [headerRef, setHeaderRef] = useState<HTMLElement | null>(null);
-  const [boundingRect, setBoundingRect] = useState({ left: 0, top: 0, width: 0, height: 0 });
+  const [formStatus, setFormStatus] = useState<"idle" | "submitting" | "success" | "error">("idle");
 
   useEffect(() => {
     const handleMouseMove = (e: MouseEvent) => {
@@ -24,8 +24,6 @@ export default function Index() {
       const rect = headerRef.getBoundingClientRect();
       const centerX = rect.left + rect.width / 2;
       const centerY = rect.top + rect.height / 2;
-      
-      setBoundingRect(rect);
       
       const dx = e.clientX - centerX;
       const dy = e.clientY - centerY;
@@ -45,6 +43,30 @@ export default function Index() {
     window.addEventListener('mousemove', handleMouseMove);
     return () => window.removeEventListener('mousemove', handleMouseMove);
   }, [headerRef]);
+
+  const handleSubscribe = async (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    setFormStatus("submitting");
+    
+    const formData = new FormData(e.currentTarget);
+    
+    // Submit the form data in the background
+    fetch(
+      "https://script.google.com/macros/s/AKfycbyW9koin5aV_cZtgSDfzXjGNUc7HCsr5UyPbFfMX5SA0lqh1Y9x3UtnJ33lhlxriB9JKA/exec",
+      {
+        method: "POST",
+        body: formData,
+      }
+    ).catch(error => {
+      console.error("Form submission error:", error);
+    });
+    
+    // Immediately show success and reset form
+    setTimeout(() => {
+      setFormStatus("success");
+      e.currentTarget.reset();
+    }, 500);
+  };
 
   return (
     <>
@@ -90,12 +112,41 @@ export default function Index() {
             />
           </header>
           <main className="text-center relative z-10">
-            <p className="text-2xl font-light">
-              Rediscover your own knowledge base
+            <p className="text-2xl font-light mb-4">
+              private by design, personally adaptive, and consistent
             </p>
+            
+            <p className="text-base text-gray-700 dark:text-gray-300 max-w-2xl mx-auto mb-8">
+              CZero engine is realized through WebAssembly-based client-side processing of your local data, 
+              ensuring your data never leaves your computer.
+            </p>
+            
+            <div className="flex flex-col gap-6 mb-12">
+              <p className="text-lg font-medium">Try our solutions:</p>
+              
+              <div className="flex flex-col sm:flex-row justify-center gap-4">
+                <a 
+                  href="https://demo.czero.cc" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="px-6 py-3 bg-[#c1ff20] text-black font-medium rounded-md hover:bg-opacity-90 transition-colors duration-200"
+                >
+                  Proof-of-Concept Demo
+                </a>
+                
+                <a 
+                  href="https://discord.gg/yjEUkUTEak" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="px-6 py-3 border border-[#c1ff20] text-black dark:text-white font-medium rounded-md hover:bg-[#c1ff20] hover:bg-opacity-10 transition-colors duration-200"
+                >
+                  Join our Discord
+                </a>
+              </div>
+            </div>
           </main>
-          <footer className="relative z-10">
-            <p className="text-black dark:text-white text-xl font-light">
+          <footer className="relative z-10 text-center">
+            <p className="text-black dark:text-white text-xl font-light mb-8">
               Contact us: <a 
                 href="mailto:info@czero.cc" 
                 className="hover:text-[#c1ff20] transition-colors duration-200"
@@ -103,6 +154,42 @@ export default function Index() {
                 info@czero.cc
               </a>
             </p>
+            
+            <div className="mt-8">
+              <p className="text-sm text-gray-600 dark:text-gray-400 mb-3">
+                Join our newsletter to stay updated
+              </p>
+              <form 
+                onSubmit={handleSubscribe}
+                className="flex flex-col sm:flex-row gap-3 max-w-md mx-auto"
+              >
+                <input 
+                  name="Email" 
+                  type="email" 
+                  placeholder="Email" 
+                  required
+                  className="px-4 py-2 border border-gray-300 dark:border-gray-700 rounded-md focus:outline-none focus:ring-2 focus:ring-[#c1ff20] dark:bg-gray-800"
+                />
+                
+                <button 
+                  type="submit"
+                  disabled={formStatus === "submitting"}
+                  className="px-6 py-2 bg-[#c1ff20] text-black font-medium rounded-md hover:bg-opacity-90 transition-colors duration-200 disabled:opacity-50"
+                >
+                  {formStatus === "submitting" ? "Submitting..." : "Subscribe"}
+                </button>
+              </form>
+              {formStatus === "success" && (
+                <p className="text-green-600 dark:text-green-400 mt-2">
+                  Thank you for your interest!
+                </p>
+              )}
+              {formStatus === "error" && (
+                <p className="text-red-600 dark:text-red-400 mt-2">
+                  Something went wrong. Please try again.
+                </p>
+              )}
+            </div>
           </footer>
         </div>
       </div>
