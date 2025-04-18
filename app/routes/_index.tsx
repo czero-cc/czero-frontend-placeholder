@@ -138,8 +138,8 @@ export default function Index() {
                     Proof-of-Concept Demo
                   </a>
                   <p className="text-xs text-gray-500 dark:text-gray-400 mt-2">
-                    *For demonstration purposes only,<br />the demo makes calls to external LLM provider at the end (for the chat experience)
-                    <br /> Please be aware of what you process with CZero engine
+                    *The demo allows you to choose between using a local LLM or an external LLM provider for the chat experience
+                    <br /> Please be mindful of the data you process with the CZero engine when selecting the external LLM provider
                   </p>
                 </div>
               </div>
