@@ -116,7 +116,7 @@ export default function Index() {
           </header>
           <main className="text-center relative z-10">
             <p className="text-3xl font-light mb-4">
-              private by design, personally adaptive, and consistent
+              Your personal AI identity
             </p>
             
             <p className="text-base text-gray-700 dark:text-gray-300 max-w-2xl mx-auto mb-8">
