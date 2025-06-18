@@ -2,6 +2,11 @@
 
 ## To test run
 
+install packages
+```
+npm install
+```
+run 
 ```
 npm run dev
 ```
