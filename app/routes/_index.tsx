@@ -162,7 +162,7 @@ export default function Index() {
               </p>
               <form 
                 onSubmit={handleSubscribe}
-                className="flex flex-col sm:flex-row gap-3 justify-center w-full max-w-md mx-auto"
+                className="flex flex-col sm:flex-row gap-3 justify-center w-full max-w-md mx-auto plausible-event-name=Mail+Button+Click"
               >
                 <input 
                   name="Email" 
@@ -175,7 +175,7 @@ export default function Index() {
                 <button 
                   type="submit"
                   disabled={formStatus === "submitting"}
-                  className="px-6 py-2 bg-[#c1ff20] text-black font-medium rounded-md hover:bg-opacity-90 transition-colors duration-200 disabled:opacity-50 plausible-event-name=Mail+Button+Click"
+                  className="px-6 py-2 bg-[#c1ff20] text-black font-medium rounded-md hover:bg-opacity-90 transition-colors duration-200 disabled:opacity-50"
                 >
                   {formStatus === "submitting" ? "Submitting..." : "Subscribe"}
                 </button>
