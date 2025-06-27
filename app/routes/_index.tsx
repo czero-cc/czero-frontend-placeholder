@@ -3,8 +3,31 @@ import { useState, useEffect } from "react";
 
 export const meta: MetaFunction = () => {
   return [
-    { title: "C0 - Private AI" },
-    { name: "C0", content: "C0 - Private AI" },
+    { title: "C0 - Private AI | Your Personal AI Identity" },
+    { name: "description", content: "CZero engine processes your local data through WebAssembly-based client-side processing, ensuring your data never leaves your computer. Experience privacy-first AI technology." },
+    
+    // Open Graph tags
+    { property: "og:title", content: "C0 - Private AI | Your Personal AI Identity" },
+    { property: "og:description", content: "CZero engine processes your local data through WebAssembly-based client-side processing, ensuring your data never leaves your computer. Experience privacy-first AI technology." },
+    { property: "og:type", content: "website" },
+    { property: "og:url", content: "https://czero.cc" },
+    { property: "og:image", content: "https://czero.cc/c0_logo_1200x630.png" },
+    { property: "og:image:alt", content: "CZero - Private AI Technology Logo" },
+    { property: "og:image:width", content: "1200" },
+    { property: "og:image:height", content: "630" },
+    { property: "og:site_name", content: "CZero" },
+    { property: "og:locale", content: "en_US" },
+    
+    
+    // Additional meta tags for better SEO
+    { name: "keywords", content: "private AI, WebAssembly, client-side processing, data privacy, local AI, personal AI, CZero, privacy-first technology" },
+    { name: "author", content: "CZero" },
+    { name: "robots", content: "index, follow" },
+    { name: "theme-color", content: "#c1ff20" },
+    
+    // Canonical URL
+    { rel: "canonical", href: "https://czero.cc" },
+    
     {
       name: "google-font",
       content: "https://fonts.googleapis.com/css2?family=Baskervville&display=swap",

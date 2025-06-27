@@ -24,4 +24,11 @@ export default defineConfig({
     netlifyPlugin(),
     tsconfigPaths(),
   ],
+  server: {
+    host: true,
+    allowedHosts: [
+      "localhost",
+      ".trycloudflare.com", // Allow all Cloudflare tunnel subdomains
+    ],
+  },
 });
