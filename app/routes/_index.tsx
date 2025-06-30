@@ -3,12 +3,12 @@ import { useState, useEffect } from "react";
 
 export const meta: MetaFunction = () => {
   return [
-    { title: "C0 - Private AI | Your Personal AI Identity" },
-    { name: "description", content: "CZero engine processes your local data through WebAssembly-based client-side processing, ensuring your data never leaves your computer. Experience privacy-first AI technology." },
+    { title: "C0 - Private AI | Your Personal AI Identity & Desktop Overlay" },
+    { name: "description", content: "CZero engine processes your local data through WebAssembly-based client-side processing, ensuring your data never leaves your computer. Experience future-proof, privacy-first AI technology with zero-effort local RAG, desktop overlay, and agentic workflow capabilities. Prevent human obsolescence in the AI era with full sovereignty through local processing." },
     
     // Open Graph tags
-    { property: "og:title", content: "C0 - Private AI | Your Personal AI Identity" },
-    { property: "og:description", content: "CZero engine processes your local data through WebAssembly-based client-side processing, ensuring your data never leaves your computer. Experience privacy-first AI technology." },
+    { property: "og:title", content: "C0 - Private AI | Your Personal AI Identity & Desktop Overlay" },
+    { property: "og:description", content: "CZero engine processes your local data through WebAssembly-based client-side processing, ensuring your data never leaves your computer. Experience future-proof, privacy-first AI technology with zero-effort local RAG, desktop overlay, and agentic workflow capabilities." },
     { property: "og:type", content: "website" },
     { property: "og:url", content: "https://czero.cc" },
     { property: "og:image", content: "https://czero.cc/c0_logo_1200x630.png" },
@@ -20,7 +20,7 @@ export const meta: MetaFunction = () => {
     
     
     // Additional meta tags for better SEO
-    { name: "keywords", content: "private AI, WebAssembly, client-side processing, data privacy, local AI, personal AI, CZero, privacy-first technology" },
+    { name: "keywords", content: "private AI, WebAssembly, client-side processing, data privacy, local AI, personal AI, CZero, privacy-first technology, desktop overlay, agentic workflows, context detection, zero-effort local RAG, AI workspace, future-proof AI, local data processing, AI identity, platform-independent AI, computer user agent, online associative memory, multi-agent coordination, AI era preparation, human obsolescence prevention, AI-ready workspaces, decentralized AI, P2P foundation, AI marketplace, next-gen AI workspace, advanced context injection, workflow automation, consumer device compatibility, high-dimensional data mapping, temporal embedding space, desktop automation, multi-app coordination, workflow orchestration, semantic understanding, privacy-secured AI, minimal installation AI, AI ecosystem, local processing sovereignty" },
     { name: "author", content: "CZero" },
     { name: "robots", content: "index, follow" },
     { name: "theme-color", content: "#c1ff20" },
@@ -104,6 +104,50 @@ export default function Index() {
           }
         `}
       </style>
+      
+      {/* JSON-LD Structured Data for SEO */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "SoftwareApplication",
+            "name": "CZero",
+            "alternateName": "C0",
+            "description": "Private AI technology platform offering desktop overlay, agentic workflows, and zero-effort local RAG processing. Future-proof AI workspace with complete data sovereignty and privacy-first architecture.",
+            "url": "https://czero.cc",
+            "applicationCategory": "BusinessApplication",
+            "operatingSystem": ["Windows", "macOS", "Linux"],
+            "offers": {
+              "@type": "Offer",
+              "price": "0",
+              "priceCurrency": "USD",
+              "availability": "https://schema.org/InStock"
+            },
+            "publisher": {
+              "@type": "Organization",
+              "name": "CZero",
+              "url": "https://czero.cc",
+              "email": "info@czero.cc"
+            },
+            "featureList": [
+              "100% Local Data Processing",
+              "Desktop Overlay Technology",
+              "Agentic Workflow Engine",
+              "Context Detection and Injection",
+              "Zero-Effort Local RAG",
+              "Computer User Agent (CUA)",
+              "Online Associative Memory (OAM)",
+              "Multi-Agent Coordination",
+              "Privacy-First Architecture",
+              "Platform Independence",
+              "Workflow Automation",
+              "AI Workspace Management"
+            ],
+            "keywords": "private AI, desktop overlay, agentic workflows, local data processing, AI workspace, context detection, privacy-first AI, workflow automation, computer user agent, online associative memory"
+          })
+        }}
+      />
       <div className="bg-white dark:bg-black text-black dark:text-white min-h-screen flex flex-col items-center justify-center overflow-y-auto py-20" style={{ fontFamily: '"Helvetica Neue", Helvetica, Arial, sans-serif' }}>
         <div className="flex flex-col items-center pt-24 w-full max-w-6xl mx-auto px-4">
           <header className="relative mb-44" ref={setHeaderRef}>
@@ -139,7 +183,7 @@ export default function Index() {
           </header>
           <main className="text-center relative z-10">
             <p className="text-3xl font-light mb-16">
-              Hyperpersonal AI Interface suite
+              Hyper-personal AI Interface
             </p>
 
             {/* Mission Overview */}
@@ -269,6 +313,52 @@ export default function Index() {
                   Join our Discord
             </a>
           </footer>
+        </div>
+        
+        {/* Hidden SEO Content - Not visible to users but crawled by search engines */}
+        <div className="sr-only" aria-hidden="true">
+          <h2>CZero Desktop Overlay - Advanced AI Workspace Technology</h2>
+          <p>
+            CZero offers next-generation AI workspace solutions including context detection and injection, 
+            agentic workflow engine capabilities, and online associative memory (OAM) systems. Our platform-independent 
+            AI identity provider keeps your data local while enabling advanced workflow automation and multi-agent coordination.
+          </p>
+          
+          <h3>Zero-Effort Local RAG Implementation</h3>
+          <p>
+            Experience powerful, private, and installation-free local data processing and RAG. Our future-proof 
+            local data processing ensures AI era preparation while preventing human obsolescence through full 
+            sovereignty and local processing control.
+          </p>
+          
+          <h3>Desktop Overlay Features</h3>
+          <p>
+            Advanced context detection, content injection, semantic understanding, privacy-first processing, 
+            real-time context analysis, multi-device sensor integration, consumer device compatibility, 
+            high-dimensional data mapping, temporal embedding space processing, desktop automation, 
+            workflow orchestration, multi-app coordination, and learning from user patterns.
+          </p>
+          
+          <h3>Computer User Agent and Workflow Engine</h3>
+          <p>
+            AI agent interaction with desktop environment, automating workflows with precision through 
+            multi-agent coordination, workflow generation, task decomposition, result synthesis, 
+            and advanced agentic workflow capabilities for comprehensive AI workspace management.
+          </p>
+          
+          <h4>Privacy-Secured AI Processing</h4>
+          <p>
+            100% local processing, minimal installation requirements, platform independence across Windows, 
+            macOS, and Linux systems. AI context injection across platforms while maintaining complete 
+            data sovereignty and privacy-secured operations.
+          </p>
+          
+          <h4>AI Marketplace and P2P Foundation</h4>
+          <p>
+            Decentralized workspace sharing with core Libp2p infrastructure, enabling users to easily share, 
+            discover, and transact on local workspaces. Monetize AI-ready local workspaces through our 
+            comprehensive marketplace ecosystem designed for the AI era.
+          </p>
         </div>
       </div>
     </>
