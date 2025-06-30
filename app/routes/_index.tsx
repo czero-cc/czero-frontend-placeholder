@@ -139,41 +139,47 @@ export default function Index() {
           </header>
           <main className="text-center relative z-10">
             <p className="text-3xl font-light mb-4">
-              Your Personal AI Identity
-            </p>
-            
-            <p className="text-base text-gray-700 dark:text-gray-300 max-w-2xl mx-auto mb-8">
-              CZero engine is realized through WebAssembly-based client-side processing of your local data, 
-              ensuring your data never leaves your computer. Experience future-proof, local data processing 
-              for AI applications - your companion app suite in the AI future.
+              Hyperpersonal AI Interface suite
             </p>
 
             {/* Mission Overview */}
-            <div className="bg-gray-50 dark:bg-gray-900 border border-gray-200 dark:border-gray-700 rounded-lg p-6 max-w-4xl mx-auto mb-8">
-              <h3 className="text-xl font-semibold mb-4 text-center">Our Mission</h3>
-              <p className="text-sm text-gray-600 dark:text-gray-400 leading-relaxed text-center">
-                CZero is about preventing <strong className="text-red-600 dark:text-red-400">human obsolescence in the AI era</strong>. 
-                We're building tools so you control <strong className="text-blue-600 dark:text-blue-400">your AI interactions and data flows</strong>, 
-                achieving <strong className="text-green-600 dark:text-green-400">full sovereignty through local processing</strong>. 
-                Our endgame: a marketplace where people can <strong className="text-purple-600 dark:text-purple-400">monetize their AI-ready local workspaces</strong> — 
-                <strong className="text-orange-600 dark:text-orange-400">your way to stay valuable</strong> by owning the input that feeds AI systems.
+            <div className="max-w-4xl mx-auto mb-16 text-center">
+              <h3 className="text-3xl font-light mb-8 text-black dark:text-white">Our Mission</h3>
+              <div className="w-24 h-px bg-[#c1ff20] mx-auto mb-8"></div>
+              <p className="text-xl font-light leading-relaxed text-black dark:text-white max-w-3xl mx-auto">
+                Stay <strong className="font-medium text-[#c1ff20]">valuable in the AI era</strong>. 
+                Control <strong className="font-medium text-[#c1ff20]">your AI interactions</strong> with 
+                <strong className="font-medium text-[#c1ff20]"> local-first processing</strong>. 
+                Build toward a <strong className="font-medium text-[#c1ff20]">marketplace</strong> where 
+                <strong className="font-medium text-[#c1ff20]"> your data has worth</strong>.
               </p>
             </div>
 
             {/* Key Features */}
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-4 max-w-4xl mx-auto mb-8">
-              <div className="bg-gray-50 dark:bg-gray-900 border border-gray-200 dark:border-gray-700 rounded-lg p-4 text-center">
-                <div className="text-green-600 dark:text-green-400 font-semibold mb-2">100% Local Processing</div>
-                <div className="text-sm text-gray-600 dark:text-gray-400">Privacy Secured</div>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-12 max-w-4xl mx-auto mb-16">
+              <div className="text-center">
+                <div className="text-2xl font-light text-black dark:text-white mb-2">100% Local</div>
+                <div className="w-16 h-px bg-[#c1ff20] mx-auto mb-3"></div>
+                <div className="text-base font-light text-gray-700 dark:text-gray-300">Privacy First</div>
               </div>
-              <div className="bg-gray-50 dark:bg-gray-900 border border-gray-200 dark:border-gray-700 rounded-lg p-4 text-center">
-                <div className="text-green-600 dark:text-green-400 font-semibold mb-2">Zero-Effort Access</div>
-                <div className="text-sm text-gray-600 dark:text-gray-400">Minimal Installation</div>
+              <div className="text-center">
+                <div className="text-2xl font-light text-black dark:text-white mb-2">Minimal Effort</div>
+                <div className="w-16 h-px bg-[#c1ff20] mx-auto mb-3"></div>
+                <div className="text-base font-light text-gray-700 dark:text-gray-300">Just Works</div>
               </div>
-              <div className="bg-gray-50 dark:bg-gray-900 border border-gray-200 dark:border-gray-700 rounded-lg p-4 text-center">
-                <div className="text-green-600 dark:text-green-400 font-semibold mb-2">Future Ready</div>
-                <div className="text-sm text-gray-600 dark:text-gray-400">AI Era Prepared</div>
-              </div>
+              <a 
+                href="https://app.czero.cc/dashboard/overlay-promo"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-center group cursor-pointer transition-all duration-200 hover:scale-105"
+              >
+                <div className="text-2xl font-light text-black dark:text-white mb-2 group-hover:text-[#c1ff20] transition-colors">Future Ready</div>
+                <div className="w-16 h-px bg-[#c1ff20] mx-auto mb-3 group-hover:w-24 transition-all"></div>
+                <div className="text-base font-light text-gray-700 dark:text-gray-300 mb-2">AI Era Prepared</div>
+                <div className="text-sm font-medium text-[#c1ff20] group-hover:text-[#c1ff20] opacity-90 group-hover:opacity-100 transition-all">
+                  <strong>CZero Desktop Overlay</strong>
+                </div>
+              </a>
             </div>
             
             <div className="flex flex-col gap-6 mb-12">
@@ -187,7 +193,7 @@ export default function Index() {
                     rel="noopener noreferrer"
                     className="px-6 py-3 bg-[#c1ff20] text-black font-medium rounded-md hover:bg-opacity-90 transition-colors duration-200"
                   >
-                    Launch CZero Beta App
+                    Launch CZero Beta Webapp
                   </a>
                   <p className="text-xs text-gray-500 dark:text-gray-400 mt-2 text-center">
                     Experience powerful, private, and installation-free local data processing and RAG
