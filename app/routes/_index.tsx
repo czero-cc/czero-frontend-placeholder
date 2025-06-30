@@ -144,25 +144,53 @@ export default function Index() {
             
             <p className="text-base text-gray-700 dark:text-gray-300 max-w-2xl mx-auto mb-8">
               CZero engine is realized through WebAssembly-based client-side processing of your local data, 
-              ensuring your data never leaves your computer.
+              ensuring your data never leaves your computer. Experience future-proof, local data processing 
+              for AI applications - your companion app suite in the AI future.
             </p>
+
+            {/* Mission Overview */}
+            <div className="bg-gray-50 dark:bg-gray-900 border border-gray-200 dark:border-gray-700 rounded-lg p-6 max-w-4xl mx-auto mb-8">
+              <h3 className="text-xl font-semibold mb-4 text-center">Our Mission</h3>
+              <p className="text-sm text-gray-600 dark:text-gray-400 leading-relaxed text-center">
+                CZero is about preventing <strong className="text-red-600 dark:text-red-400">human obsolescence in the AI era</strong>. 
+                We're building tools so you control <strong className="text-blue-600 dark:text-blue-400">your AI interactions and data flows</strong>, 
+                achieving <strong className="text-green-600 dark:text-green-400">full sovereignty through local processing</strong>. 
+                Our endgame: a marketplace where people can <strong className="text-purple-600 dark:text-purple-400">monetize their AI-ready local workspaces</strong> — 
+                <strong className="text-orange-600 dark:text-orange-400">your way to stay valuable</strong> by owning the input that feeds AI systems.
+              </p>
+            </div>
+
+            {/* Key Features */}
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-4 max-w-4xl mx-auto mb-8">
+              <div className="bg-gray-50 dark:bg-gray-900 border border-gray-200 dark:border-gray-700 rounded-lg p-4 text-center">
+                <div className="text-green-600 dark:text-green-400 font-semibold mb-2">100% Local Processing</div>
+                <div className="text-sm text-gray-600 dark:text-gray-400">Privacy Secured</div>
+              </div>
+              <div className="bg-gray-50 dark:bg-gray-900 border border-gray-200 dark:border-gray-700 rounded-lg p-4 text-center">
+                <div className="text-green-600 dark:text-green-400 font-semibold mb-2">Zero-Effort Access</div>
+                <div className="text-sm text-gray-600 dark:text-gray-400">Minimal Installation</div>
+              </div>
+              <div className="bg-gray-50 dark:bg-gray-900 border border-gray-200 dark:border-gray-700 rounded-lg p-4 text-center">
+                <div className="text-green-600 dark:text-green-400 font-semibold mb-2">Future Ready</div>
+                <div className="text-sm text-gray-600 dark:text-gray-400">AI Era Prepared</div>
+              </div>
+            </div>
             
             <div className="flex flex-col gap-6 mb-12">
-              <p className="text-lg font-medium">Try it yourself:</p>
+              <p className="text-lg font-medium">Experience the Beta:</p>
               
               <div className="flex flex-col sm:flex-row justify-center gap-4">
                 <div className="flex flex-col items-center">
                   <a 
-                    href="https://demo.czero.cc" 
+                    href="https://app.czero.cc" 
                     target="_blank" 
                     rel="noopener noreferrer"
                     className="px-6 py-3 bg-[#c1ff20] text-black font-medium rounded-md hover:bg-opacity-90 transition-colors duration-200"
                   >
-                    Proof-of-Concept Demo
+                    Launch CZero Beta App
                   </a>
-                  <p className="text-xs text-gray-500 dark:text-gray-400 mt-2">
-                    *The demo allows you to choose between using a local LLM or an external LLM provider for the chat experience
-                    <br /> Please be mindful of the data you process with the CZero engine when selecting the external LLM provider
+                  <p className="text-xs text-gray-500 dark:text-gray-400 mt-2 text-center">
+                    Experience powerful, private, and installation-free local data processing and RAG
                   </p>
                 </div>
               </div>
