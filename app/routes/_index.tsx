@@ -138,20 +138,16 @@ export default function Index() {
             />
           </header>
           <main className="text-center relative z-10">
-            <p className="text-3xl font-light mb-4">
+            <p className="text-3xl font-light mb-16">
               Hyperpersonal AI Interface suite
             </p>
 
             {/* Mission Overview */}
             <div className="max-w-4xl mx-auto mb-16 text-center">
-              <h3 className="text-3xl font-light mb-8 text-black dark:text-white">Our Mission</h3>
               <div className="w-24 h-px bg-[#c1ff20] mx-auto mb-8"></div>
               <p className="text-xl font-light leading-relaxed text-black dark:text-white max-w-3xl mx-auto">
-                Stay <strong className="font-medium text-[#c1ff20]">valuable in the AI era</strong>. 
-                Control <strong className="font-medium text-[#c1ff20]">your AI interactions</strong> with 
-                <strong className="font-medium text-[#c1ff20]"> local-first processing</strong>. 
-                Build toward a <strong className="font-medium text-[#c1ff20]">marketplace</strong> where 
-                <strong className="font-medium text-[#c1ff20]"> your data has worth</strong>.
+                Keep data <strong className="font-medium text-[#c1ff20]">local</strong>, manage your own AI usage context <strong className="font-medium text-[#c1ff20]">centrally</strong> <br />
+                Inject <strong className="font-medium text-[#c1ff20]">everywhere</strong>
               </p>
             </div>
 
@@ -160,13 +156,17 @@ export default function Index() {
               <div className="text-center">
                 <div className="text-2xl font-light text-black dark:text-white mb-2">100% Local</div>
                 <div className="w-16 h-px bg-[#c1ff20] mx-auto mb-3"></div>
-                <div className="text-base font-light text-gray-700 dark:text-gray-300">Privacy First</div>
+                <div className="text-base font-light text-gray-700 dark:text-gray-300">No data leaves your computer</div>
               </div>
-              <div className="text-center">
-                <div className="text-2xl font-light text-black dark:text-white mb-2">Minimal Effort</div>
-                <div className="w-16 h-px bg-[#c1ff20] mx-auto mb-3"></div>
-                <div className="text-base font-light text-gray-700 dark:text-gray-300">Just Works</div>
-              </div>
+                              <div className="text-center">
+                  <div className="text-2xl font-light text-black dark:text-white mb-2">Minimal Effort</div>
+                  <div className="w-16 h-px bg-[#c1ff20] mx-auto mb-3"></div>
+                  <div className="text-base font-light text-gray-700 dark:text-gray-300">
+                    Webapp (Zero-effort)
+                    <br />
+                    Desktop Overlay (One installer)
+                  </div>
+                </div>
               <a 
                 href="https://app.czero.cc/dashboard/overlay-promo"
                 target="_blank"
@@ -175,10 +175,13 @@ export default function Index() {
               >
                 <div className="text-2xl font-light text-black dark:text-white mb-2 group-hover:text-[#c1ff20] transition-colors">Future Ready</div>
                 <div className="w-16 h-px bg-[#c1ff20] mx-auto mb-3 group-hover:w-24 transition-all"></div>
-                <div className="text-base font-light text-gray-700 dark:text-gray-300 mb-2">AI Era Prepared</div>
-                <div className="text-sm font-medium text-[#c1ff20] group-hover:text-[#c1ff20] opacity-90 group-hover:opacity-100 transition-all">
-                  <strong>CZero Desktop Overlay</strong>
-                </div>
+                                 <div className="text-base font-light text-gray-700 dark:text-gray-300 mb-2">AI Era Prepared</div>
+                 <div className="text-sm font-light text-gray-600 dark:text-gray-400 mb-2">
+                   Maintain your personal usage in one place and inject everywhere
+                 </div>
+                 <div className="text-sm font-medium text-[#c1ff20] group-hover:text-[#c1ff20] opacity-90 group-hover:opacity-100 transition-all">
+                   <strong>CZero Desktop Overlay</strong>
+                 </div>
               </a>
             </div>
             
@@ -196,7 +199,7 @@ export default function Index() {
                     Launch CZero Beta Webapp
                   </a>
                   <p className="text-xs text-gray-500 dark:text-gray-400 mt-2 text-center">
-                    Experience powerful, private, and installation-free local data processing and RAG
+                    Experience private and installation-free local data processing
                   </p>
                 </div>
               </div>
