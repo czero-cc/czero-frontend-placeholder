@@ -38,7 +38,7 @@ export const meta: MetaFunction = () => {
 export default function Index() {
   const [mousePos, setMousePos] = useState({ x: 0, y: 0 });
   const [headerRef, setHeaderRef] = useState<HTMLElement | null>(null);
-  const [formStatus, setFormStatus] = useState<"idle" | "submitting" | "success" | "error">("idle");
+  // const [formStatus, setFormStatus] = useState<"idle" | "submitting" | "success" | "error">("idle");
 
   useEffect(() => {
     const handleMouseMove = (e: MouseEvent) => {
@@ -67,6 +67,7 @@ export default function Index() {
     return () => window.removeEventListener('mousemove', handleMouseMove);
   }, [headerRef]);
 
+  /* Newsletter form handler - commented out since newsletter form is disabled
   const handleSubscribe = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     setFormStatus("submitting");
@@ -90,6 +91,7 @@ export default function Index() {
       e.currentTarget.reset();
     }, 500);
   };
+  */
 
   return (
     <>
@@ -260,6 +262,7 @@ export default function Index() {
                 Please reach out to discuss how we can help with your privacy-first AI implementation.
               </p>
             </div>
+            {/* Newsletter signup section - commented out since we have proper auth in webapp
             <div className="mb-4 flex flex-col items-center">
               <p className="text-sm text-gray-600 dark:text-gray-400 mb-3">
                 Join our newsletter to stay updated
@@ -295,6 +298,7 @@ export default function Index() {
                 </p>
               )}
             </div>
+            */}
             
             <p className="text-black dark:text-white text-xl font-light mb-4">
               Contact us: <a 
