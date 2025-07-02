@@ -3,16 +3,16 @@ import { useState, useEffect } from "react";
 
 export const meta: MetaFunction = () => {
   return [
-    { title: "C0 - Private AI | Your Personal AI Identity & Desktop Overlay" },
-    { name: "description", content: "CZero engine processes your local data through WebAssembly-based client-side processing, ensuring your data never leaves your computer. Experience future-proof, privacy-first AI technology with zero-effort local RAG, desktop overlay, and agentic workflow capabilities. Prevent human obsolescence in the AI era with full sovereignty through local processing." },
+    { title: "CZero - Personal AI Interface | Your Personal AI Interface | CZero Desktop Overlay" },
+    { name: "description", content: "CZero engine processes your data locally, ensuring your data never leaves your computer. Experience future-proof, privacy-first AI technology with zero-effort local RAG, desktop overlay, and agentic workflow capabilities. Prevent human obsolescence in the AI era with full sovereignty through local processing." },
     
     // Open Graph tags
-    { property: "og:title", content: "C0 - Private AI | Your Personal AI Identity & Desktop Overlay" },
-    { property: "og:description", content: "CZero engine processes your local data through WebAssembly-based client-side processing, ensuring your data never leaves your computer. Experience future-proof, privacy-first AI technology with zero-effort local RAG, desktop overlay, and agentic workflow capabilities." },
+    { property: "og:title", content: "C0 - Personal AI Interface | Your Personal AI Interface | CZero Desktop Overlay" },
+    { property: "og:description", content: "CZero engine processes your data locally, ensuring your data never leaves your computer. Experience future-proof, privacy-first AI technology with zero-effort local RAG, desktop overlay, and agentic workflow capabilities. Prevent human obsolescence in the AI era with full sovereignty through local processing." },
     { property: "og:type", content: "website" },
     { property: "og:url", content: "https://czero.cc" },
     { property: "og:image", content: "https://czero.cc/c0_logo_1200x630.png" },
-    { property: "og:image:alt", content: "CZero - Private AI Technology Logo" },
+    { property: "og:image:alt", content: "CZero - Personal AI Interface Technology Logo" },
     { property: "og:image:width", content: "1200" },
     { property: "og:image:height", content: "630" },
     { property: "og:site_name", content: "CZero" },
@@ -114,7 +114,7 @@ export default function Index() {
             "@type": "SoftwareApplication",
             "name": "CZero",
             "alternateName": "C0",
-            "description": "Private AI technology platform offering desktop overlay, agentic workflows, and zero-effort local RAG processing. Future-proof AI workspace with complete data sovereignty and privacy-first architecture.",
+            "description": "Personal AI Interface, Private AI technology platform offering desktop overlay, agentic workflows, and zero-effort local RAG processing. Future-proof AI workspace with complete data sovereignty and privacy-first architecture.",
             "url": "https://czero.cc",
             "applicationCategory": "BusinessApplication",
             "operatingSystem": ["Windows", "macOS", "Linux"],
@@ -144,7 +144,7 @@ export default function Index() {
               "Workflow Automation",
               "AI Workspace Management"
             ],
-            "keywords": "private AI, desktop overlay, agentic workflows, local data processing, AI workspace, context detection, privacy-first AI, workflow automation, computer user agent, online associative memory"
+            "keywords": "personal AI interface, private AI, desktop overlay, agentic workflows, local data processing, AI workspace, context detection, privacy-first AI, workflow automation, computer user agent, online associative memory"
           })
         }}
       />
@@ -183,7 +183,7 @@ export default function Index() {
           </header>
           <main className="text-center relative z-10">
             <p className="text-3xl font-light mb-16">
-              Hyper-personal AI Interface
+              Personal AI Interface
             </p>
 
             {/* Mission Overview */}
@@ -304,20 +304,30 @@ export default function Index() {
                 info@czero.cc
               </a>
             </p>
-            <a 
-                  href="https://discord.gg/yjEUkUTEak" 
-                  target="_blank" 
-                  rel="noopener noreferrer"
-                  className="px-6 py-3 border border-[#c1ff20] text-black dark:text-white font-medium rounded-md hover:bg-[#c1ff20] hover:bg-opacity-10 transition-colors duration-200"
-                >
-                  Join our Discord
-            </a>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+              <a 
+                href="https://blog.czero.cc" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="px-6 py-3 border border-[#c1ff20] text-black dark:text-white font-medium rounded-md hover:bg-[#c1ff20] hover:bg-opacity-10 transition-colors duration-200"
+              >
+                Read our Blog
+              </a>
+              <a 
+                href="https://discord.gg/yjEUkUTEak" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="px-6 py-3 border border-[#c1ff20] text-black dark:text-white font-medium rounded-md hover:bg-[#c1ff20] hover:bg-opacity-10 transition-colors duration-200"
+              >
+                Join our Discord
+              </a>
+            </div>
           </footer>
         </div>
         
         {/* Hidden SEO Content - Not visible to users but crawled by search engines */}
         <div className="sr-only" aria-hidden="true">
-          <h2>CZero Desktop Overlay - Advanced AI Workspace Technology</h2>
+          <h2>CZero Desktop Overlay - Advanced AI Workspace Technology | Personal AI Interface</h2>
           <p>
             CZero offers next-generation AI workspace solutions including context detection and injection, 
             agentic workflow engine capabilities, and online associative memory (OAM) systems. Our platform-independent 
