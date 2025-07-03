@@ -3,6 +3,7 @@ node_modules
 /build
 .env
 .aider*
+scratches/
 
 # mac
 .DS_Store
