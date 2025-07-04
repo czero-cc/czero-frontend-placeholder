@@ -3,25 +3,25 @@ import { useState, useEffect } from "react";
 
 export const meta: MetaFunction = () => {
   return [
-    { title: "CZero - Personal AI Interface | Your Personal AI Interface | CZero Desktop Overlay" },
-    { name: "description", content: "CZero engine processes your data locally, ensuring your data never leaves your computer. Experience future-proof, privacy-first AI technology with zero-effort local RAG, desktop overlay, and agentic workflow capabilities. Prevent human obsolescence in the AI era with full sovereignty through local processing." },
+    { title: "CZero Engine - Personal AI Interface | Your Personal AI Interface | CZero Desktop Overlay" },
+    { name: "description", content: "CZero Engine processes your data locally, ensuring your data never leaves your computer. Experience future-proof, privacy-first AI technology with zero-effort local RAG, desktop overlay, and agentic workflow capabilities. Prevent human obsolescence in the AI era with full sovereignty through local processing." },
     
     // Open Graph tags
-    { property: "og:title", content: "C0 - Personal AI Interface | Your Personal AI Interface | CZero Desktop Overlay" },
-    { property: "og:description", content: "CZero engine processes your data locally, ensuring your data never leaves your computer. Experience future-proof, privacy-first AI technology with zero-effort local RAG, desktop overlay, and agentic workflow capabilities. Prevent human obsolescence in the AI era with full sovereignty through local processing." },
+    { property: "og:title", content: "CZero Engine - Personal AI Interface | Your Personal AI Interface | CZero Desktop Overlay" },
+    { property: "og:description", content: "CZero Engine processes your data locally, ensuring your data never leaves your computer. Experience future-proof, privacy-first AI technology with zero-effort local RAG, desktop overlay, and agentic workflow capabilities. Prevent human obsolescence in the AI era with full sovereignty through local processing." },
     { property: "og:type", content: "website" },
     { property: "og:url", content: "https://czero.cc" },
     { property: "og:image", content: "https://czero.cc/c0_logo_1200x630.png" },
     { property: "og:image:alt", content: "CZero - Personal AI Interface Technology Logo" },
     { property: "og:image:width", content: "1200" },
     { property: "og:image:height", content: "630" },
-    { property: "og:site_name", content: "CZero" },
+    { property: "og:site_name", content: "CZero Engine" },
     { property: "og:locale", content: "en_US" },
     
     
     // Additional meta tags for better SEO
-    { name: "keywords", content: "private AI, WebAssembly, client-side processing, data privacy, local AI, personal AI, CZero, privacy-first technology, desktop overlay, agentic workflows, context detection, zero-effort local RAG, AI workspace, future-proof AI, local data processing, AI identity, platform-independent AI, computer user agent, online associative memory, multi-agent coordination, AI era preparation, human obsolescence prevention, AI-ready workspaces, decentralized AI, P2P foundation, AI marketplace, next-gen AI workspace, advanced context injection, workflow automation, consumer device compatibility, high-dimensional data mapping, temporal embedding space, desktop automation, multi-app coordination, workflow orchestration, semantic understanding, privacy-secured AI, minimal installation AI, AI ecosystem, local processing sovereignty" },
-    { name: "author", content: "CZero" },
+    { name: "keywords", content: "personal AI Interface, private AI, WebAssembly, client-side processing, data privacy, local AI, personal AI, CZero, privacy-first technology, desktop overlay, agentic workflows, context detection, zero-effort local RAG, AI workspace, future-proof AI, local data processing, AI identity, platform-independent AI, computer user agent, online associative memory, multi-agent coordination, AI era preparation, human obsolescence prevention, AI-ready workspaces, decentralized AI, P2P foundation, AI marketplace, next-gen AI workspace, advanced context injection, workflow automation, consumer device compatibility, high-dimensional data mapping, temporal embedding space, desktop automation, multi-app coordination, workflow orchestration, semantic understanding, privacy-secured AI, minimal installation AI, AI ecosystem, local processing sovereignty" },
+    { name: "author", content: "Fiefworks, Inc." },
     { name: "robots", content: "index, follow" },
     { name: "theme-color", content: "#c1ff20" },
     
@@ -114,8 +114,8 @@ export default function Index() {
           __html: JSON.stringify({
             "@context": "https://schema.org",
             "@type": "SoftwareApplication",
-            "name": "CZero",
-            "alternateName": "C0",
+            "name": "CZero Engine",
+            "alternateName": "C0 Engine",
             "description": "Personal AI Interface, Private AI technology platform offering desktop overlay, agentic workflows, and zero-effort local RAG processing. Future-proof AI workspace with complete data sovereignty and privacy-first architecture.",
             "url": "https://czero.cc",
             "applicationCategory": "BusinessApplication",
@@ -133,6 +133,7 @@ export default function Index() {
               "email": "info@czero.cc"
             },
             "featureList": [
+              "Personal AI Interface",
               "100% Local Data Processing",
               "Desktop Overlay Technology",
               "Agentic Workflow Engine",
