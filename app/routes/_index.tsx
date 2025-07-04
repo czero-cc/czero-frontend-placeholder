@@ -262,7 +262,8 @@ export default function Index() {
               </p>
               <p className="text-base text-gray-700 dark:text-gray-300 max-w-2xl mx-auto mb-6">
                 We&apos;d love to hear about your use case and specific requirements. 
-                Please reach out to discuss how we can help with your use-cases.
+                <br />
+                Please reach out to discuss how we can help.
               </p>
             </div>
             {/* Newsletter signup section - commented out since we have proper auth in webapp
