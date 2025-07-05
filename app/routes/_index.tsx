@@ -185,15 +185,12 @@ export default function Index() {
             />
           </header>
           <main className="text-center relative z-10">
-            <p className="text-3xl font-light mb-16">
-              Personal AI Interface
-            </p>
-
             {/* Mission Overview */}
             <div className="max-w-4xl mx-auto mb-16 text-center">
               <div className="w-24 h-px bg-[#c1ff20] mx-auto mb-8"></div>
-              <p className="text-xl font-light leading-relaxed text-black dark:text-white max-w-3xl mx-auto">
-                Keep data <strong className="font-medium text-[#c1ff20]">local</strong>, manage your own AI usage context <strong className="font-medium text-[#c1ff20]">centrally</strong> <br />
+              <p className="text-2xl font-light leading-relaxed text-black dark:text-white max-w-3xl mx-auto">
+                Keep data <strong className="font-medium text-[#c1ff20]">local</strong> <br />
+                Manage your own AI usage context <strong className="font-medium text-[#c1ff20]">centrally</strong> <br />
                 Inject <strong className="font-medium text-[#c1ff20]">everywhere</strong>
               </p>
             </div>
